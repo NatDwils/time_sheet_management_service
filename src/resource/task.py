@@ -1,10 +1,10 @@
 from fastapi import APIRouter, File, UploadFile
 
-from models.user import User
-from reposatory.db import task
+from src.models.user import User
+from src.repository.db import task
 import pandas as pd
 from bson.objectid import ObjectId
-from schemas.user import userEntity, usersEntity
+from src.schemas.user import userEntity, usersEntity
 
 user = APIRouter()
 
